@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SQL Interaction Form</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+		<legend>Step 1: Input Information</legend>
+		
+		<label for="createName">Name (Key)</label><br /> 
+		<input name="name" type="text"value="" /> <br />
+		
+		<label for="createAddress">Address</label><br /> 
+		<input name="address" type="text"value="" /> <br />
+		
+		<label for="createPhone">Phone</label><br /> 
+		<input name="phone" type="text"value="" /> <br /> 
+		</fieldset>
+
+		<fieldset>
+			<legend>Step 2: Select Operation</legend>
+		<input name="crud" id="Create" type="radio" value="Create" /> Create <br />
+		<input name="crud" id="Read" type="radio" value="Read" /> Read <br />
+		<input name="crud" id="Update" type="radio" value="Update" /> Update <br />
+		<input name="crud" id="Delete" type="radio" value="Delete" /> Delete <br />  
+		</fieldset>
+		
+		<fieldset>
+		<legend>Step 3: Click Button</legend>
+		<button type="submit" value="Submit" onClick="execute(this.form)">Submit</button><br/>
+		</fieldset>
+		
+		<textarea name=output style="display:none;" cols="30" rows="10">Output</textarea><br />
+
+		<script language="JavaScript" type="text/javascript" src="execute.js"></script>
+	</form>
+</body>
+</html>
+
+
